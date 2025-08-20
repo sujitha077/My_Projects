@@ -1,0 +1,377 @@
+body{
+    background: linear-gradient(to left,rgb(45, 45, 45) ,rgb(0, 195, 255)) ;
+}
+.container{
+    height: 600px;
+    width: 1000px;
+    background-color: black;
+    position: absolute;
+    top: 90px;
+    left: 250px;
+    color: white;
+    border-radius: 30px;
+  
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 20px;
+   
+}
+.title{
+    text-align: center;
+    font-size: large;
+}
+.menu,a{
+   margin-right: 50px;
+   color: white;
+   text-decoration: none;
+   font-size: large;
+}
+.menu a:hover{
+    color:rgb(0, 195, 255) ;
+    transition: 0.5s;
+    filter: blur(0);
+    
+}
+
+
+.content{
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+button{
+   padding: 10px;
+    border-radius: 20px;
+    transform: scale(1.2);
+    background-color: rgb(0, 195, 255);
+    color: white;
+}
+.round1{
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    height: 300px;
+    width: 300px;
+     background:conic-gradient( from var(--angle),transparent 30%,rgb(0, 195, 255)) 50%;
+    border-radius: 50%;
+    animation: spin 3s infinite linear;
+    filter: blur(.1rem);
+  
+}
+@property --angle{
+        syntax:"<angle>";
+            initial-value: 0deg;
+            inherits: false;
+    }
+ @keyframes spin{
+        from{
+            --angle:0deg;
+        }
+        to{
+            --angle:360deg;
+        }
+    }
+  .round2{
+background-color: black;
+height: 280px;
+width: 280px;
+margin-left: 10px;
+margin-top: 10px;
+border-radius: 50%;
+z-index: -2; 
+} 
+i{
+    position: relative;
+    left: 20px;
+    padding: 10px;
+    font-size: large;
+    color: white;
+
+}
+.logo{
+    position: absolute;
+    right: 80px;
+    top: 170px;
+    z-index: 3;
+
+}
+span{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.content.first-text{
+    color: white;
+}
+.animated-text{
+    font-size: 34px;
+    font-weight:600;
+    min-width: 200px;
+}
+.animated-text span{
+    position: relative;
+    left: 20px;
+    animation: word 20s infinite;
+}
+.animated-text span::before{
+    content:"Full-Stack Developer";
+    color:rgb(0, 195, 255);
+
+}
+.animated-text span::after{
+    content: "";
+    position: absolute;
+     right: -6px;
+ border-left: 2px solid rgb(0, 195, 255) ;
+    width: 5px;
+    height: 40px;
+    background-color: white;
+    animation: cursor .8s infinite typing 20s steps(14) infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid chocolate;
+    }
+}
+@keyframes word{
+    0%,20%{
+        content: "youtuber";
+    }
+    21%,40%{
+        content: "youtuber";
+    }   
+    41%,60%{
+        content: "youtuber";
+    }
+    61%,80%{
+        content: "youtuber";
+    }
+    81%,100%{
+        content: "devloper";
+    }
+}
+.about{
+    position:absolute;
+     z-index: 3;
+     border-radius: 30px;
+    
+}
+.container2{
+    height: 600px;
+    width: 1000px;
+    background-color: black;
+    position: absolute;
+    top: 95%;
+    left: 250px;
+    border-radius: 30px;
+}
+.body,.container2{
+    background-color: blue;
+    color: white;
+}
+.about{
+    margin-left: 50px;
+}
+#image{
+
+    position: relative;
+    left: 20px;
+    top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid white;
+    width: 250px;
+    box-shadow: 3px 3px 5px 3px white;
+     background-color: blue;
+     border-radius: 30px;
+   
+}
+.myself{
+    position: relative;
+    top: 20%;
+   left: 50%;
+  overflow: hidden;
+  width: 480px;
+}
+.myself i{
+    color: white;
+}
+#about_me{
+    transition: 2s;
+    animation-delay: 2s;
+}
+#cv{
+transform: scale(1);
+background-color: black;
+color: white;
+padding: 15px;
+}
+.box{
+   position: absolute;
+   top: 120px;
+   left: 100px;
+    height: 250px;
+    width: 250px;
+    background: conic-gradient(from var(--angle),transparent 30%,white);
+    z-index: -1;
+    border-radius: 30px;
+     animation: spin 3s infinite linear;
+     filter: blur(2px);
+}
+.container3{
+    height: 600px;
+    width: 1000px;
+    background-color: black;
+    position: absolute;
+    top: 180%;
+    left: 250px;
+    color: white;
+    border-radius: 30px;
+}
+.skill_logo{
+   display: flex;
+    justify-content: space-evenly;
+
+}
+#js{
+    position: absolute;
+    top: 350px;
+  left: 170px;
+  
+}
+#node{
+    position: absolute;
+    top: 340px;
+    right: 200px;
+}
+.skill_logo:hover img:hover{
+    transform: translatey(-15px);
+    transition: 0.5s;
+    filter: blur(0);
+   
+}
+.skill_logo:hover img{
+    filter: blur(2px);
+}
+.skill_logo img{
+    border: 2px solid rgb(0, 195, 255);
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
+    box-shadow: 5px 5px 5px 5px rgb(0, 195, 255) ;
+}
+.container4{
+   
+    height: 600px;
+    width: 1000px;
+    background-color: blue;
+    position: absolute;
+    top: 265%;
+    left: 250px;
+    color: white;
+    border-radius: 30px;
+}
+
+.Contact_me table{
+position: absolute;
+top: 30%;
+left: 30%;
+
+}
+.btn{
+    width: 100px;
+    position: relative;
+    left: 470px;
+    top: 350px;
+       background: linear-gradient(to left,rgb(45, 45, 45) ,rgb(0, 195, 255)) ;
+}
+td{
+   padding: 20px;
+}
+input{
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+
+}
+table{
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px 5px white;
+
+}
+
+.container5{
+   height: 600px;
+    width: 1000px;
+    background-color: black;
+    position: absolute;
+    top: 350%;
+    left: 250px;
+    color: white;
+    border-radius: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.slider{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg) ;
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.slider span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+.slider span img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 2s;
+    box-shadow: 5px 5px 5px 5px rgb(0, 195, 255);
+}
+.slider span:hover{
+    transform: translateY(-50px) scale(2);
+    transition: 1.5s;  
+    box-shadow: 5px 5px 5px 5px rgb(0, 195, 255) , -5px -5px 5px 5px  rgb(0, 195, 255); 
+    border-radius: 10px;
+    
+}
+
+.slider:hover span:hover{
+    filter: blur(0);
+}
+.slider:hover span{
+    filter: blur(.1rem);
+}
+
+.container5 h1{
+    position: absolute;
+    top: 50px;
+}

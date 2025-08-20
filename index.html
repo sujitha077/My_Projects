@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<style>
+    .container,.container2,.container3,.container4,.container5{
+        box-shadow: 5px 5px 5px 5px skyblue;
+    }
+    @media (max-width: 760px) {
+        .container {
+            width: 500px;
+            margin-right: 200px;
+            position: absolute;
+            left: 30px;
+        }
+
+        .menu {
+            width: 250px;
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+        }
+        .menu a{
+            font-size: 15px;
+           
+        }
+
+        .logo {
+            width: 50px;
+            height:50px;
+            margin-right:70px;
+
+        }
+
+        .round1 {
+            position: absolute;
+            margin-top: 20px;
+            left: 30k0px;
+            width: 250px;
+            height: 250px;
+
+        }
+
+        .round2 {
+            width: 230px;
+            height: 230px;
+        }
+
+        .content {
+            position: absolute;
+            left: 30px;
+        }
+        .content h1 {
+            font-size: 20px;
+        }
+        .content span{
+            font-size: 20px;
+        }
+        .animated-text{
+            font-size: 20px;
+        }
+
+        .container2 {
+            width: 500px;
+            margin-right: 200px;
+            position: absolute;
+            left: 30px;
+        }
+
+        #image {
+            position: absolute;
+            left: 0px;
+            height: 150px;
+            width: 150px;
+        }
+
+        .container2 img {
+            position: absolute;
+            left: 10px;
+        }
+         #cv{
+            padding: 10px;
+        
+         }
+        .myself {
+            flex-direction: row;
+            width: 205px;
+            position: absolute;
+            top: 50px;
+            left: 280px;
+           
+        }
+
+        .about {
+            width: 150px;
+            height: 150px;
+        }
+        #image{
+            position: absolute;
+            left: 0px;
+        }
+        
+        #image img {
+            position: absolute;
+            left: 10px;
+            height: 150px;
+            width: 150px;
+        }
+        .box{
+            position: absolute;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container3 {
+            width: 500px;
+            margin-right: 200px;
+            position: absolute;
+            left: 30px;
+        }
+
+        .skills img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #js {
+            position: absolute;
+            left: 100px;
+        }
+
+        #node {
+            position: absolute;
+            right: 100px;
+        }
+
+        .container4 {
+            width: 500px;
+            margin-right: 200px;
+            position: absolute;
+            left: 30px;
+            align-items: center;
+        }
+
+         table{
+          position: absolute;
+          top: 50px;
+           
+        }
+        .btn{
+          position: relative;
+          left: 250px;
+        }
+
+        tr input {
+            width: 100px;
+          
+        }
+        .container5{
+         width: 500px;
+            margin-right: 200px;
+            position: absolute;
+            left: 30px;
+            align-items: center;
+        }
+        
+    }
+   
+</style>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="title">Protfilo</div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#about_me">About</a>
+                <a href="#skills">skills</a>
+                <a href="#touch">Contact</a>
+                 <a href="#credit">Credits</a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Sujitha!</h1>
+            <div class="animated-text">
+                I'm a<span></span>
+            </div>
+            <h4>I am intern at liveWire.i am studying Mern-stack development</h4>
+            <button>Download CV</button> <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i><i
+                class="fa-brands fa-google"></i>
+        </div>
+        <div class="logo">
+            <img src="C:\Users\suji4\OneDrive\My_project\html.png" alt="no image" width="250px" height="250px">
+        </div>
+        <div class="round1">
+            <div class="round2"></div>
+        </div>
+    </div>
+    <div id="about_me" class="container2">
+        <div class="about">
+            <div class="box"></div>
+            <!-- <h1>About Me</h1>
+        <h2>Intern at liveWire.studying full-stack development</h2> -->
+            <div id="image">
+                <img src="C:\Users\suji4\OneDrive\My_project\user.png" alt="C:\Users\suji4\OneDrive\My_project\user.png"
+                    width="250px" height="250px">
+            </div>
+        </div>
+
+        <div class="myself">
+            <h1 style="color: black;">About Me</h1>
+            <h3> I’m a full-stack developer who loves crafting both the look and the logic of web applications. I work
+                with JavaScript, React, Node.js, and MongoDB, and I’m always excited to learn new tools and frameworks
+                that make development faster and better.<br></h3>
+            <h1 style="font-size: 40px;">,,</h1>
+            <button id="cv">Download CV</button>
+        </div>
+
+    </div>
+    <div id="skills" class="container3">
+        <div class="skills">
+            <center>
+                <h1>My Skills</h1>
+            </center>
+            <div class="skill_logo">
+                <img src="C:\Users\suji4\OneDrive\My_project\avatar.png" height="150px" width="200px">
+                <img src="C:\Users\suji4\OneDrive\My_project\css.png" height="120px" width="160px"
+                    style="margin-top: 30px;">
+                <img src="C:\Users\suji4\OneDrive\My_project\js.png" id="js" height="250px" width="250px">
+                <img src="C:\Users\suji4\OneDrive\My_project\jquery.png" height="150px" width="200px">
+                <img src="C:\Users\suji4\OneDrive\My_project\node.png" id="node" height="150px" width="200px">
+            </div>
+
+        </div>
+    </div>
+    <div id="touch" <div class="container4">
+        <div class="Contact_me">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5d3c36b5-26ac-4264-92a6-0bb34789355d">
+                <table>
+                    <center>
+                        <h1>Contact Me</h1>
+                    </center>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name" placeholder="Enter Your Name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" placeholder="Enter Your Mail" required></td>
+                    </tr>
+                    <tr>
+                        <td>Message:</td>
+                        <td><textarea name="message" placeholder="Message"></textarea></td> <br>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <button type="submit" class="btn">Submitt</button><br>
+                        <h1 style="position: absolute; top: 80%; left: 45%; font-weight: large;"><i
+                                class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i><i
+                                class="fa-brands fa-google"></i></h1>
+
+                </table>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div id="credit"
+    class="container5">
+        <h1>My Acheivements</h1>
+         <div class="slider">
+          <span style="--i:1"><img src="C:\Users\suji4\OneDrive\Certificates\Nit_page-0001.jpg" alt=""></span>
+          <span style="--i:2"><img src="C:\Users\suji4\OneDrive\Certificates\sujitha_mongodb1_page-0001.jpg" alt=""></span>
+          <span style="--i:3"><img src="C:\Users\suji4\OneDrive\Certificates\ui_page-0001.jpg" alt=""></span>
+          <span style="--i:4"><img src="C:\Users\suji4\OneDrive\Certificates\HCM_page-0001.jpg" alt=""></span>
+          <span style="--i:5"><img src="C:\Users\suji4\OneDrive\Certificates\bently3_page-0001.jpg" alt=""></span>
+          <span style="--i:6"><img src="C:\Users\suji4\OneDrive\Certificates\ui_page-0001.jpg" alt=""></span>
+          <span style="--i:7" ><img src="C:\Users\suji4\OneDrive\Certificates\HCM_page-0001.jpg"alt=""></span>
+          <span style="--i:8"><img src= "C:\Users\suji4\OneDrive\Certificates\Nit_page-0001.jpg" alt=""></span>     
+    </div>
+    </div>
+
+</body>
+
+</html>
